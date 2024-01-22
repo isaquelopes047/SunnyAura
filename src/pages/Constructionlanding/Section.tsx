@@ -37,7 +37,7 @@ const Section = () => {
                                 <Col lg={12}>
                                     <div className="construction-home-content text-center text-white">
                                         <h4 className="construction-home-title line-height_1_6 text-uppercase letter-spacing_4">
-                                            Sunny Aura<br />Ilumine Seu Estilo, Vista Sunny Aura.
+                                            Sunny Auraa<br />Ilumine Seu Estilo, Vista Sunny Aura.
                                         </h4>
                                         <div className="construction-home-border mt-4"></div>
                                         <p className="construction-home-desc f-16 mt-4 mx-auto line-height_1_8">
