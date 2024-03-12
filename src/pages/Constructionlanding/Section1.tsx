@@ -15,8 +15,8 @@ import 'swiper/css/autoplay';
 import FooterSection from '../../layout/Footer'
 
 const teamData = [
-    { name: "Bianca M. Trapp Blaska", role: "COSTUREIRA", image: user1, resume: 'Bianca M. Trapp Blaska desempenha um papel fundamental como costureira e é uma das fundadoras da marca Sunny Aura. destacando seu papel crucial no desenvolvimento da marca desde o início.'},
-    { name: "Eliane Trapp", role: "COSTUREIRA", image: user2, resume: 'Eliane Trapp, costureira com mais de 20 anos de experiência, destaca-se por sua habilidade em criar peças intricadas. Sua expertise é vital para a Sunny Aura, sendo uma inspiração central na concepção de designs elaborados.'},
+    { name: "Bianca M. Trapp Blaska", role: "COSTUREIRA", image: user1, resume: 'Desempenha um papel fundamental, e é uma das fundadoras da marca Sunny Aura. destacando seu papel crucial no desenvolvimento da marca desde o início.'},
+    { name: "Eliane Trapp", role: "COSTUREIRA", image: user2, resume: 'Costureira com mais de 20 anos de experiência, destaca-se por sua habilidade em criar peças intricadas. Sua expertise é vital para a Sunny Aura, sendo uma inspiração central na concepção de designs elaborados.'},
 ]    
 
 const Section1 = () => {
@@ -110,7 +110,6 @@ const Section1 = () => {
                                         <img src={teamMember.image} className="img-fluid rounded-circle" alt={teamMember.name} />
                                     </div>
                                     <h5 className="mt-4 text-uppercase letter-spacing_2 f-15">{teamMember.name}</h5>
-                                    <p className="text-muted f-13">{teamMember.role}</p>
                                     <p className="text-muted mb-0">{teamMember.resume}</p>
                                 </div>
                             </Col>
