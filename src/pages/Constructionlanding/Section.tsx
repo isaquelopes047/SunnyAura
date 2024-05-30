@@ -47,10 +47,10 @@ const SubContainer = styled.div`
 const ContainerModalInfos = styled.div`
     width: 600px;
     height: 600px;
-    padding-left: 10px;
+    padding-left: 15px;
 
     @media (max-width: 600px) {
-        width: 100%;
+        width: 90vw;
         height: 100%;
         padding: 10px;
     }
@@ -72,8 +72,8 @@ const styleModal = {
     borderRadius: '5px',
 
     cardRede: {
-        width: '100px',
-        height: '100px',
+        width: '90px',
+        height: '90px',
         borderRadius: '15px',
         marginRight: '30px',
         display: 'flex',
@@ -104,7 +104,7 @@ const Section = () => {
                                 <p>Clique no icone que você será redirecionado automaticamente.</p>
                             </div>
                             <div>
-                                <section style={{ display: 'flex', marginTop: '30px', }}>
+                                <section style={{ display: 'flex', marginTop: '30px', flexDirection: 'row', flexWrap: 'wrap'}}>
                                     {cardsVenda.map(item => (
                                         <Link to={item.link}>
                                             <div style={{ ...styleModal.cardRede, backgroundColor: item.cor, }}>
@@ -122,7 +122,7 @@ const Section = () => {
                                     Se sinta seguro para clicar e realizar as compras <br/> em nossos links. Duvidas ou segestoes, abaixo <br/> tem nossos canais de atendimento.
                                 </p>
                             </div>
-                            <div style={{ display: 'flex', flexDirection: 'column', height: '240px', paddingBottom: '15px', }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', height: '240px', paddingBottom: '15px' }}>
                                 <Typography 
                                     id="modal-modal-description" sx={{ mt: 2 }} 
                                     style={{ 
@@ -165,7 +165,7 @@ const Section = () => {
                                             Iluminando seu dia com o estilo ensolarado da Sunny Aura.
                                         </p>
                                         <div className="mt-4 pt-3">
-                                            <Button href="#" variant="md" className="btn-custom" onClick={handleOpen}>PONTOS DE COMPRA</Button>
+                                            <Button href="#" variant="md" className="btn-custom" onClick={handleOpen}>PONTOS DE VENDA</Button>
                                         </div>
                                     </div>
                                 </Col>

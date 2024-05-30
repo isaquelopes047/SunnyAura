@@ -65,52 +65,28 @@ const Section1 = () => {
 
     return (
         <React.Fragment>
-            {/* CTA */}
-            <section className="section bg-construction-cta" id="ecommerce">
-                <div className="bg-overlay"></div>
-                <Container>
-                    <Row>
-                        <Col lg={12}>
-                            <div className="construction-cta-content text-white text-center">
-                                <h4 className="construction-cta-title text-uppercase line-height_1_4 letter-spacing_2">
-                                    CONFERIR NOSSA LOJA
-                                </h4>
-                                <p className="mt-4 text-white-50">
-                                    Acesse nosso ecommerce e conheça nossas ofertas e nossa variedade de vestuario.
-                                </p>
-                                <div className="mt-4 pt-3">
-                                    <Button variant="outline-light" className='btn-md btn-white' >
-                                        ACESSE NOSSO ECOMMERCE
-                                    </Button>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
             {/* team */}
-            <section className="section" id="CEO">
+            <section className="section" id="CEO" style={{ backgroundColor: '#292929',}}>
                 <Container>
                     <Row className="justify-content-center">
                         <Col lg={8}>
                             <div className="home-title text-center">
-                                <h2 className="heading-title-title letter-spacing_4 text-uppercase">FUNDADORAS</h2>
+                                <h2 className="heading-title-title letter-spacing_4 text-uppercase" style={{color: '#fff'}}>FUNDADORAS</h2>
                                 <p className="heading-title-desc text-muted mt-4">
-
                                 </p>
                             </div>
                         </Col>
                     </Row>
 
-                    <div className="row mt-5 pt-3" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', }}>
+                    <div className="row mt-5 pt-3" style={{display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         {teamData.map((teamMember, index) => (
                             <Col lg={4} key={index}>
                                 <div className="team p-4 text-center mt-4">
                                     <div className="agency-team-img">
                                         <img src={teamMember.image} className="img-fluid rounded-circle" alt={teamMember.name} />
                                     </div>
-                                    <h5 className="mt-4 text-uppercase letter-spacing_2 f-15">{teamMember.name}</h5>
-                                    <p className="text-muted mb-0">{teamMember.resume}</p>
+                                    <h5 className="mt-4 text-uppercase letter-spacing_2 f-15" style={{ color: '#fff'}}>{teamMember.name}</h5>
+                                    <p className="text-muted mb-0" style={{ color: '#fff'}}>{teamMember.resume}</p>
                                 </div>
                             </Col>
                         ))}
